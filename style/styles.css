@@ -1,8 +1,78 @@
+:root {
+  /* Основной шрифт */
+  --main-font: Roboto;
+  /* Дополнительный шрифт */
+  --secondary-font: Raleway;
+  /* Цвет активации */
+  --active-color: #2196f3;
+}
+
 body {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.74;
   letter-spacing: 0.03em;
-  text-align: left;
   color: #212121;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+/* Верхняя линия */
+.header {
+  background-color: #ececec;
+}
+.header-link {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: var(--active-color);
+}
+.nav-link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--active-color);
+}
+
+.header-mail {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--active-color);
+}
+
+.header-tel {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--active-color);
 }
