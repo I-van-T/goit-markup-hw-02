@@ -5,14 +5,19 @@
   --secondary-font: Raleway;
   /* Цвет активации */
   --active-color: #2196f3;
+  /* Цвет текста */
+  --text-color: #757575;
+  /* Цвет заголовков */
+  --text-header: #212121;
 }
 
 body {
   font-family: var(--main-font);
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.74;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .list {
@@ -30,18 +35,17 @@ body {
   font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--active-color);
 }
 .nav-link {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--text-header);
 }
 
 .nav-link:hover,
@@ -50,12 +54,11 @@ body {
 }
 
 .header-mail {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 .header-mail:hover,
@@ -64,30 +67,26 @@ body {
 }
 
 .header-tel {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 .header-tel:hover,
 .header-tel:focus {
   color: var(--active-color);
 }
-
 /* Шапка */
-
 .hero {
   background-color: #2f303a;
 }
 
 .hero-title {
-  font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -98,7 +97,7 @@ body {
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 16px;
-  line-height: 1, 88;
+  line-height: 1.88;
   /* identical to box height, or 187% */
   display: flex;
   align-items: center;
@@ -113,3 +112,64 @@ body {
 .hero-button:focus {
   background-color: #188ce8;
 }
+/* Особенности */
+.benefits,
+.services {
+  background-color: #e5e5e5;
+}
+
+.benefits-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-header);
+}
+/* Чем занимаемся */
+.services-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-header);
+}
+/* Наша команда */
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-header);
+}
+
+.team-item {
+  background-color: #ffffff;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-header);
+}
+
+.team-profession {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/* Футер */
